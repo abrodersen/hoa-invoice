@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hoa-invoice"
+version = "0.1.0"
+description = ""
+authors = ["Aaron Brodersen <aaron@abrodersen.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gql = {extras = ["all"], version = "^3.5.0"}
+requests = "^2.31.0"
+google-api-python-client = "^2.125.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.0"
+
+[tool.poetry.scripts]
+hoa-invoice = "hoa_invoice:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
